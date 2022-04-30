@@ -8,18 +8,19 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author lsl
- * @date 2022/4/30 22:14
+ * @date 2022/4/30 23:12
  */
 @Component
 @Aspect
 @Slf4j
-public class ClassAspect {
-    @Pointcut(value = "within(service.AspectTestOne+)")
-    public void classAspect(){
+public class InterfaceAspect {
+    @Pointcut(value = "within(service.AspectTestTwo+)")
+    public void interfaceAspect(){
+
     }
 
-    @Before(value = "classAspect()")
-    public void beforeClassAspect(){
-        log.info("beforeClassAspect");
+    @Before(value = "interfaceAspect()")
+    public void beforeInterfaceAspect(){
+        log.info("beforeInterfaceAspect");
     }
 }

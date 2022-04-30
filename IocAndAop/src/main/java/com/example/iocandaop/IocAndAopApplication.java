@@ -3,7 +3,7 @@ package com.example.iocandaop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"aspect","controller","service"})
+@SpringBootApplication(scanBasePackages = {"controller","aspect","service"})
 public class IocAndAopApplication {
 
     public static void main(String[] args) {
